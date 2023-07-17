@@ -46,7 +46,7 @@ const removeProduct = id => {
                 <h1>These are the items in your cart:</h1>
                 <hr />
                 {Object.values(cart.products).map((pro, ind) => {
-                    return <Card key={ind} className="text-center">
+                    return <Card key={ind} className="text-center" style={{ width: '15rem' }}>
                     <Card.Header><strong>{pro.data.title}</strong></Card.Header>
                         <Card.Body>
                             <div>
@@ -67,7 +67,7 @@ const removeProduct = id => {
                     </Card>
                 })}
             </div>
-            <Button variant="danger" onClick={clearCart}>Empty Cart</Button>
+            <Button className="empty" variant="danger" onClick={clearCart}>Empty Cart</Button>
         </>
 
     )

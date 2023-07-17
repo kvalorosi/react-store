@@ -6,7 +6,7 @@ function Navm() {
         <>
             <Navbar bg="info" data-bs-theme="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Shop Till' You Drop</Navbar.Brand>
+                    <Navbar.Brand className="shop" href="#home">Shop Till' You Drop</Navbar.Brand>
                     <Nav className="me-auto">
                         <Link className="navbar-brand" to="/">Home</Link>
                         <Link className="navbar-brand" to="/shop">Shop</Link>
@@ -14,13 +14,6 @@ function Navm() {
                     </Nav>
                 </Container>
             </Navbar>
-
-
-
-
-
-
-
 
         </>
     );

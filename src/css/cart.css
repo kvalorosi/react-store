@@ -1,8 +1,19 @@
 .container{
+    display: block;
     margin: 0 auto;
+    
 }
 
 .item-img{
-    max-width: 150x;
+    max-width: 100x;
 
 }
+
+.text-center {
+    margin: 0 auto;
+}
+
+.empty {
+    margin: 0 auto;
+}
+

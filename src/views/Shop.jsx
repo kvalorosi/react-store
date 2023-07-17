@@ -43,7 +43,7 @@ const Shop = () => {
       <div className="container">
         <div className="row">
           {products && products.length ? products.map((p, index) => {
-            return <Card key={index} id={p.id} variant="outlined" style={{ width: '18rem' }}>
+            return <Card key={index} id={p.id} variant="outlined" style={{ width: '15rem' }}>
                <Card.Title><strong>{p.title}</strong></Card.Title>
               <Card.Body>
               <Card.Img variant="top" src={p.image} />
@@ -55,14 +55,14 @@ const Shop = () => {
               </ListGroup>
               <hr />
               <Card.Body>
-                <Button variant="warning" onClick={() => addProduct(p)}>Add Item</Button>
+                <Button variant="info" onClick={() => addProduct(p)}>Add Item</Button>
                 <hr />
               </Card.Body>
             </Card>
 
           })
             :
-            <h1>Loading please be patient</h1>
+            <h1>Loading please be patient...</h1>
 
           }
 

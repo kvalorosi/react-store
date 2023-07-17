@@ -6,6 +6,7 @@ import { Route, Routes } from 'react-router-dom';
 import Home from './views/Home';
 import Shop from './views/Shop';
 import Cart from './views/Cart';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 

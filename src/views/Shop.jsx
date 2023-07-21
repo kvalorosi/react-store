@@ -10,7 +10,7 @@ const Shop = () => {
   useEffect(() => { console.log('SHOP component state has been rendered or re-rendered') });
 
   const getProductsData = async () => {
-    let response = await axios.get('http://127.0.0.1:5000/auth/products');
+    let response = await axios.get('https://battle-013j.onrender.com//auth/products');
     return response.status === 200 ? response.data : null;
   }
   const loadProductsData = async () => {
